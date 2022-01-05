@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800');
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import '~bootstrap/scss/bootstrap';
+
+@import "./styles/mis-variables";
+
+.color-modal-header{
+    background-color: $oxido !important;
+}
+
+.grupo-botones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+button.margin-right {
+    margin-right: 20px;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: x-large;
+    color: black !important;
+}
+
+.grupo-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    // margin-top: 12px;
+}
+
+.sangria {
+    text-indent:3%;
+ }
+
+.example-full-width {
+    width: 100%;
+}
