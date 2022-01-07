@@ -69,11 +69,6 @@ export class SidebarComponent implements OnInit {
     this.pushRightClass = 'push-right';
   }
 
-  eventCalled(): void {
-    console.log('eventCalled()');
-    this.isActive = !this.isActive;
-  }
-
   addExpandClass(element: any): void {
     if (element === this.showMenu) {
       this.showMenu = '0';

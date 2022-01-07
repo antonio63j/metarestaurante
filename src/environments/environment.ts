@@ -12,7 +12,7 @@ export const env = {
 export const environment = {
   production: false,
 
-  urlWebDemo: 'https://restaurante.fernandezlucena.es:8084',
+  urlWebDemo: 'https://restaurante.fernandezlucena.es',
   carpetaVideos: 'assets/videos/guias',
 
   // Solo para el envio de mensajes hacia nosotros
@@ -20,7 +20,7 @@ export const environment = {
   domain: `${env.domain}`,
   domainUrl: `${env.protocol}://${env.app}${env.domain}`,
   urlEndPoint: `${env.protocol}://${env.app}${env.domain}:8084`,
-  googleAnalyticsId: 'G-C0JMPBWNPM'
+  googleAnalyticsId: 'C0JMPBWNPM'
 
 };
 

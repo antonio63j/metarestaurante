@@ -1,0 +1,6 @@
+.mi-responsive {
+    width: auto;
+    height: auto !important;
+    max-width:  1400px;
+    max-height: 900px;
+}

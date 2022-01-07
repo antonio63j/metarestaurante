@@ -45,13 +45,13 @@ const cookieConfig: NgcCookieConsentConfig = {
     message: 'By using our site, you acknowledge that you have read and understand our ',
 
     cookiePolicyLink: 'Política de cookies',
-    cookiePolicyHref: environment.urlEndPoint + '/api/politica-cookies',
+    cookiePolicyHref: '/politica/cookies',
 
     privacyPolicyLink: 'Política de privacidad',
-    privacyPolicyHref: environment.urlEndPoint + '/api/politica-cookies',
+    privacyPolicyHref: 'politica/privacidad',
 
     tosLink: 'Términos del servicio',
-    tosHref: environment.urlEndPoint + '/api/politica-cookies',
+    tosHref: '/politica/terminos-servicio',
   }
 };
 

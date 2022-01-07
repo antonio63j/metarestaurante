@@ -6,6 +6,7 @@ import { HttpParams } from '@angular/common/http';
 import { Subscription, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { isPlatformBrowser } from '@angular/common';
+import { environment } from 'src/environments/environment';
 
 @Component({
     selector: 'app-header',
@@ -16,6 +17,8 @@ import { isPlatformBrowser } from '@angular/common';
 export class HeaderComponent implements OnInit, OnDestroy {
 
     public pushRightClass: string;
+    public empresa: string ="Demostracion";
+    public env: any = environment;
 
     // public dropdownList = [];
     // public selectedItems = [];
@@ -34,18 +37,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
     ) {
         this.router.events.subscribe((val) => {
-
-            if (val instanceof NavigationEnd) {
-                console.log('en gestion router.events');
-                console.log(val);
-                console.log('this.isTogge()=' + this.isToggled());
-            }
-
             if (isPlatformBrowser(this.platformId) &&
                 val instanceof NavigationEnd &&
                 isPlatformBrowser(this.platformId) &&
                 window.innerWidth <= 992 && this.isToggled()) {
-                console.log('se invoca toggleSidebar()');
                 this.toggleSidebar();
             }
         });
@@ -94,14 +89,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
             dom.classList.toggle(this.pushRightClass);
         }
-    }
-
-    onLoggedout(): void {
-        this.router.navigate(['\dashboard']);
-    }
-
-    changeLang(language: string): void {
-        this.translate.use(language);
     }
 
     ngOnDestroy(): void {

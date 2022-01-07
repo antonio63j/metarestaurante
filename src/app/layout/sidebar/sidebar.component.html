@@ -1,17 +1,60 @@
 <!-- <nav [ngClass]="{ sidebarPushRight: isActive, collapsed: collapsed }" class="sidebar"> -->
-<nav [ngClass]="{ sidebarPushRight: isActive }" class="sidebar">
+<!-- <nav [ngClass]="{ sidebarPushRight: isActive }" class="sidebar"> -->
+<nav class="sidebar">
+
   <div class="list-group">
     <div class="header-fields">
       <a [routerLink]="['/dashboard']" class="list-group-item">
-        <span><i class="fa fa-home"></i>&nbsp; Home</span>
+        <span><i class="fas fa-home"></i>&nbsp; Home</span>
       </a>
       <a [routerLink]="['/contacto']" class="list-group-item">
-        <span><i class="fa fa-cutlery"></i>&nbsp; Contacto</span>
+        <span><i class="fas fa-file-signature"></i>&nbsp; Contacto</span>
       </a>
       <a [routerLink]="['/ventajas']" class="list-group-item">
-        <span><i class="fa fa-list-ul"></i>&nbsp; Ventajas</span>
+        <span><i class="fas fa-list-ul"></i>&nbsp; Ventajas</span>
       </a>
 
+      <div class="nested-menu">
+
+        <a (click)="addExpandClass('profile')" class="list-group-item">
+          <span><i class="fas fa-video"></i>&nbsp; Tutoriales</span>
+        </a>
+        <li [class.expand]="showMenu === 'profile'" class="nested">
+          <ul class="submenu">
+            <li>
+              <a [routerLink]="['/guia/datos-empresa']">
+                <span><i class="fas fa-address-card"></i> Datos Empresa</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia/imagenes-portada']">
+                <i class="fas fa-images"></i> Imágenes de portada
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia/categorias']">
+                <span><i class="fas fa-folder-open"></i> Clasificar productos
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/guia/carta']">
+                <i class="fas fa-hard-hat"></i> Carta
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/guia/menu']" class="dropdown-item">
+                <i class="fas fa-utensils"></i> Menu
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/guia/pedidos']" class="dropdown-item">
+                <i class="fas fa-shipping-fast"></i> Pedidos
+              </a>
+            </li>
+          </ul>
+        </li>
+      </div>
       
     </div> <!-- heder-fields-->
   </div> <!-- clase="group" -->

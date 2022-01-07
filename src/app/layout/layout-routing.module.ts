@@ -20,6 +20,10 @@ const routes: Routes = [
           { path: 'guia',
             loadChildren: () => import('../guia/guia.module').then(m => m.GuiaModule)
           },
+
+          { path: 'politica',
+          loadChildren: () => import('../politicas/politica.module').then(m => m.PoliticaModule)
+          }
       ]
   }
 ];
