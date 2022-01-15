@@ -57,10 +57,10 @@ export class ContactoComponent implements OnInit {
     // this.metaTagService.updateTag({name: 'keywords', content: 'menu, platos, postres, primero, sugundo, arroces, pescados, pedidos, online, cocina, tradicional, calidad, buen precio'}, "name='keywords'");
     this.metaTagService.updateTag({
       name: 'description', content: `Solicita información \
-      sobre cómo puedes conseguir sitio web o pagina web para tu restaurante, \
-      resolveremos tus consultas lo antes posible. Ten en cuenta que nuestras web para \
-      restaurantes tienen la posibilidad de que el cliente diseñe su pedido online \
-      con entraga a domicilio o recogida en restaurante`}, `name='description'`);
+sobre cómo puedes conseguir sitio web o pagina web para tu restaurante, \
+resolveremos tus consultas lo antes posible. Ten en cuenta que nuestras web para \
+restaurantes tienen la posibilidad de que el cliente diseñe su pedido online \
+con entraga a domicilio o recogida en restaurante`}, `name='description'`);
 
     this.canonicalService.updateCanonicalUrl();
 

@@ -10,6 +10,7 @@ import { Subscription, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 import { isPlatformBrowser } from '@angular/common';
+import { environment } from '../../../environments/environment';
 
 interface SubMenu {
   routLink: string;
@@ -32,8 +33,7 @@ export class SidebarComponent implements OnInit {
   pushRightClass: string;
   private unsubscribe$ = new Subject();
 
-  public hiddenProductosEnCarrito = false;
-  public numArticulosCarrito = 0;
+  public env: any = environment;
 
 
   @Output() collapsedEvent = new EventEmitter<boolean>();

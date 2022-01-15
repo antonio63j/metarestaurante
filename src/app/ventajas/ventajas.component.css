@@ -1,8 +1,3 @@
-.mi-responsive {
-    width: 100%;
-    height: auto;
-  }
-
-  .embed-responsive .card-img-top {
+.card-img-top {
     object-fit: cover;
 }

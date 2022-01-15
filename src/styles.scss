@@ -45,8 +45,18 @@ button.margin-right {
 }
 
 .contenedor-tutoriales {
-    width: 80%;
-    // margin: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+
+.card-img-top {
+    object-fit: cover;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+}
+
+
+

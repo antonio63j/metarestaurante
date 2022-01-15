@@ -5,21 +5,22 @@
 export const env = {
   protocol: 'http',
   domain: 'localhost',
-  app: ''
+  app: '',
+  urlWebDemo: 'https://restaurante.fernandezlucena.es'
 };
 
 
 export const environment = {
   production: false,
 
-  urlWebDemo: 'https://restaurante.fernandezlucena.es',
+  urlWebDemo: `${env.urlWebDemo}`,
+  urlWebDemoServices: `${env.urlWebDemo}:8084`,
   carpetaVideos: 'assets/videos/guias',
 
-  // Solo para el envio de mensajes hacia nosotros
-  serverSsrPort: 9999,
+  serverSsrPort: 8075,
   domain: `${env.domain}`,
   domainUrl: `${env.protocol}://${env.app}${env.domain}`,
-  urlEndPoint: `${env.protocol}://${env.app}${env.domain}:8084`,
+
   googleAnalyticsId: 'C0JMPBWNPM'
 
 };
